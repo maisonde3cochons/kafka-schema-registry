@@ -1,10 +1,10 @@
 ## [schema registry]
 --------------------------------
 
-Producer에서 필드(삭제 또는 추가)변경이 발생할 때 Consumer에서 이것을 참조하고 있다면 문제가 발생할 수 있음
-(Kafka Broker에서 데이터 유효성 검증을 따로 안 하기 때문에)
-사고를 사전에 방지하기 위해 message schemas 유효성에 대해서 상호 보증할 수 있는 필요가 생김!!
-이런 필요를 충족시켜주는 것이 schema registry!!
+Producer에서 필드(삭제 또는 추가)변경이 발생할 때 Consumer에서 이것을 참조하고 있다면 문제가 발생할 수 있음<br/>
+<b>(Kafka Broker에서 데이터 유효성 검증을 따로 안 하기 때문)</b><br/>
+사고를 사전에 방지하기 위해 message schemas 유효성에 대해서 상호 보증할 수 있는 필요가 생김<br/>
+이런 필요를 충족시켜주는 것이 schema registry!!<br/>
 
 <b>How? :</b> Schema Registry는 동일 스키마에 대한 호환성 체크를 하기 위해 버전을 유지
 
@@ -34,4 +34,4 @@ schema registry에 문제가 생기면 심각한 문제 발생!!
 docker-compose -f docker-compose-confluent-schema-registry-and-rest-proxy.yml up
 ```
 
-> #### schema_registry_and_rest_proxy_examples.txt 참고하여 REST API test 진행
+<b>schema_registry_and_rest_proxy_examples.txt</b> 참고하여 REST API test 진행
