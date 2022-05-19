@@ -17,7 +17,7 @@ Producer에서 필드(삭제 또는 추가)변경이 발생할 때 Consumer에�
 * avro :  apahche hadoop에서 개발한 Data Serializing & RPC F/W 
         json으로 schema작성하고 Binary로 Serializing 시켜준다
 
-####schema registry는 kafka broker / zookeeper와 별도 서버로 구성됨 <br/>
+#### schema registry는 kafka broker / zookeeper와 별도 서버로 구성됨 <br/>
 producer/consumer는  매번 schema registry에 schema를 전송하는 것은 아니고, <br/>
 로컬 cache를 가지고 있다. 자신이 로컬 캐시에 schema를 가지고 없을 때만 schema registry와 통신한다.<br/>
 schema registry에 문제가 생기면 심각한 문제 발생!!
